@@ -1,0 +1,199 @@
+<html>
+    <head>
+        <title>R & D Fitness</title>
+        <script language="Javascript" type="text/JavaScript" src="bmi.js"></script>
+    </head>
+    
+    <style>
+        ul{
+            list-style-type: none;
+            margin-left: 100px;
+            padding: 0;
+            overflow: hidden;
+            display:inline-block;
+            position: static;
+            background-color: white;
+            
+            
+        }
+        .li  {
+            float: left;
+        }
+        li a{
+            display: block;
+            text-decoration: none;
+            color: black;
+            text-align: center;
+            padding: 20px;
+            
+
+        }
+        .active{
+            background-color: yellowgreen;
+        }
+        li a:hover{
+            background-color: black;
+            color:white;
+
+        }
+        .topic{
+            width: 200px;
+            height:auto;
+            background-color: black;
+            color: white;
+            text-align: center;
+            margin-left: 100px;
+            display: inline-block;
+            margin-top: 0px;
+            position:sticky;
+            
+            
+            
+        }
+        body{
+            margin: 0px;
+        }
+        .captimg{
+            border-radius: 50px;
+            resize: both;
+        }
+        .topd{
+            position: absolute;
+            bottom: auto;
+            z-index: 10;
+            height: auto;
+
+        }
+        
+        .imaged{
+            width: 100%;
+            position: absolute;
+
+        }
+        .mainim{
+            
+            padding-top:120px;
+            position: relative;
+        }
+        .descr{
+            position: absolute;
+            top:90px;
+            left:550px;
+            font-size: 28.5px;
+            background-color: brown;
+            color: azure;
+        }
+        .BMI{
+            position: relative;
+            background-color: aquamarine;
+            height: 45%;
+            top: 470px;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .b{
+            background-color: burlywood;
+            font-size: 23px;
+            font-weight: bolder;
+        }
+        
+        table,th,td{
+            border: 1px solid black;
+            font-size: medium;
+        }
+        .anim{
+            animation: col 3s infinite;
+            background-color: orange;
+
+        }
+        @keyframes col {
+            form{background-color: orange;}
+            to{background-color: red;}
+        }
+        
+
+        
+    </style>
+
+<body>
+    <div class ="topd">
+        <div class="topic">
+            <h1 ><img class="captimg" src="header.png" height="50px"> R & D Fitness</h1>
+        </div>
+        <ul>
+            <li class="li"><a class="active" href="#">Home</a></li>
+            <li class="li"><a href="#">R & D Fitness</a></li>
+            <li class="li"><a href="#">Train With Us</a></li>
+            <li class="li"><a href="#">Membership</a></li>
+            <li class="li"><a href="#">Timetable</a></li>
+            <li class="li"><a href="#">Rates</a></li>
+            <li class="li"><a href="#">Events</a></li>
+            <li class="li"><a href="#">Find Us</a></li>
+
+        </ul>
+    </div>
+    <div class="imaged">
+        <img class="mainim" src="download (1).jpg" height="350px">
+        <p class="descr">
+        </br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Want to look good,feel great and healthy? </br></br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="im1" src="images (3).jpg" height="150px"><img src="images (6).jpg" height="150px"><img src="images (1).jpg"height="150px"></br>
+        &nbsp;&nbsp;Welcome to R & D Fitness, </br>&nbsp;&nbsp;the most exclusive,Wellness Studio and Gymnasium in Sri Lanka!!!!</br></br>&nbsp;&nbsp;&nbsp;&nbsp;
+        </p>  
+        
+    </div>
+    <div class="BMI">
+        
+        <div style="top: 10px;">
+            <p style="padding-top: 10px;"> Calculate your BMI here.
+            
+                <form>
+                    <div align ="center">
+                       <p> Weight:  <input type="number" step="0.001" id= "weight"> kg</p>
+                       <p style="padding-left:250px"> Height:  <input type="number" step="0.001" id= "height" > m      
+                       <span style="padding-left:100px"><input  type="button" style="font-size: medium;background-color: yellow;" onclick="calculateBMI()" value="Calculate">
+                       <input type="reset" style="font-size: medium;" name="reset" value= "Reset">
+                       </p>
+                    </div>
+                   </form>
+               
+            </p>
+
+        </div>
+        <div style="top:0;position: relative;top:10px;">
+            <table >
+                <tr>
+                    <th>BMI Range</th>
+                    <th>Weight Range</th>
+                </tr>
+                
+                <tr>
+                    <td>18.5</td>
+                    <td>Underweight</td>
+                </tr>
+                <tr>
+                    <td>18.5-25</td>
+                    <td>Normal weight</td>
+                </tr>
+                <tr>
+                    <td>>25</td>
+                    <td>Overweight</td>
+                </tr>
+            </table>
+        </div>
+
+
+        
+  
+
+    </div>
+    <div class="anim" style="padding-top: 10px;text-align:center;position: relative;top:470px;font-weight: bolder;font-family: sans-serif;" >
+    Train with us,<br> selecting the best suited work-out plan based on your BMI status<br> Hurry Up!!!!!!
+         
+    </div>
+    <footer style="position: relative;top:470px;text-align: center;">
+       &copy; R & D Fitness
+    </footer>
+
+   
+</body>
+</html>
